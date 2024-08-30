@@ -19,6 +19,5 @@ public class FindMinDiffPair {
                 System.out.print( "(" + arr[i - 1] + "," + arr[i] + "),");
             }
         }
-
     }
 }
