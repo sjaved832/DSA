@@ -8,15 +8,16 @@ public class FindMinDiffPair {
         Arrays.sort(arr); // 10,12,50,100
         printDiffPair(arr, arr.length);
     }
+
     static void printDiffPair(int[] arr, int n) {
-        int mainDiff = arr[1] - arr[0];
+        int mainDiffr = arr[1] - arr[0];
 
         for (int i = 2; i < n; i++)
-            mainDiff = Math.min(arr[i] - arr[i - 1], mainDiff);
+            mainDiffr = Math.min(arr[i] - arr[i - 1], mainDiffr);
 
         for (int i = 1; i < n; i++) {
-            if ( (arr[i] - arr[i - 1]) == mainDiff ) {
-                System.out.print( "(" + arr[i - 1] + "," + arr[i] + "),");
+            if ((arr[i] - arr[i - 1]) == mainDiffr) {
+                System.out.print("(" + arr[i - 1] + "," + arr[i] + "),");
             }
         }
     }
