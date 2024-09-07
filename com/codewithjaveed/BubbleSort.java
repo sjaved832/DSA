@@ -3,7 +3,12 @@ package com.codewithjaveed;
 public class BubbleSort {
 
     /*
-     * Run two loops assuming 1st loops first index as a minimum number and
+        1. Start at the beginning of the list and compare the first two elements.
+        2. If the first element is greater than the second, swap them.
+        3. Move on to compare the second and third elements, and continue swapping if necessary.
+        4. Continue this process until you reach the end of the list, resulting in the largest element being positioned at its correct place at the end of the list.
+        5. Repeat steps 1-4 for each pair of adjacent elements in the list, gradually moving through it from start to finish.
+        6. Keep repeating these steps until no more swaps are needed, indicating that all elements are in their correct order.
      */
     void sort(int[] arr, int n) {
 
