@@ -1,5 +1,15 @@
 package com.codewithjaveed;
 
+/*
+   1. Divide: Split the unsorted list into two equal sublists (or as close to equal as possible).
+   2. Recursively apply merge sort to each of the sublists until each sublist contains only one element.
+   3. Merge: Merge the sorted sublists back together by comparing elements from each sublist and placing them in order into a new combined sorted list.
+
+   To summarize:
+   - Divide and conquer by recursively splitting the unsorted list into smaller sublists.
+   - Sort by applying merge sort to each of these smaller sublists independently.
+   - Merge the sorted sublists back together to form a single sorted list.
+ */
 public class MergeSort {
 
    void conquer(int arr[], int beg, int mid, int end) {
