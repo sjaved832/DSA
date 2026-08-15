@@ -1,4 +1,4 @@
-package com.codewithjaveed;
+package com.codewithjaveed.algorithm;
 
 /*
     1. Choose a pivot element from the array. This can be any element, but commonly it is either the first or last element in the array.

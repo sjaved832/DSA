@@ -1,10 +1,10 @@
-package com.codewithjaveed;
+package com.codewithjaveed.algorithm;
 
 import java.util.Arrays;
 
 public class FindMinDiffPair {
     public static void main(String[] args) {
-        int arr[] = {5, 4, 3, 2};
+        int[] arr = {5, 4, 3, 2};
         Arrays.sort(arr); // 10,12,50,100
         printDiffPair(arr, arr.length);
     }

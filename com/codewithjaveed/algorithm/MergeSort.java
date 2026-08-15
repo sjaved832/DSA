@@ -1,4 +1,4 @@
-package com.codewithjaveed;
+package com.codewithjaveed.algorithm;
 
 /*
    1. Divide: Split the unsorted list into two equal sublists (or as close to equal as possible).
@@ -12,8 +12,8 @@ package com.codewithjaveed;
  */
 public class MergeSort {
 
-   void conquer(int arr[], int beg, int mid, int end) {
-      int merged[] = new int[end-beg+1];
+   void conquer(int[] arr, int beg, int mid, int end) {
+      int[] merged = new int[end-beg+1];
 
       int leftIndx = beg;
       int rightIndx = mid+1;
@@ -41,7 +41,7 @@ public class MergeSort {
       }
    }
 
-   void divide(int arr[], int beg, int end) {
+   void divide(int[] arr, int beg, int end) {
       if (beg < end) {        
          int mid = beg+(end-beg)/2; // (beg+end)/2
          divide(arr, beg, mid);
@@ -50,13 +50,13 @@ public class MergeSort {
       }
    }
    void printArr(int arr[], int n) {
-      for (int i = 0; i < arr.length; i++) {
-         System.out.print(arr[i] + " ");
-      }
+       for (int j : arr) {
+           System.out.print(j + " ");
+       }
       System.out.println();
    }
    public static void main(String[] args) {
-      int arr[] = { 11, 30, 24, 7, 31, 16, 39, 41 };
+      int[] arr = { 11, 30, 24, 7, 31, 16, 39, 41 };
       int n = arr.length;
       var ms = new MergeSort();
       System.out.println("Before Sorting ");

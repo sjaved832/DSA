@@ -1,4 +1,4 @@
-package com.codewithjaveed;
+package com.codewithjaveed.algorithm;
 
 public class SelectionSort {
 
@@ -27,12 +27,11 @@ public class SelectionSort {
     }
 
     void printArr(int[] arr) {
-        for (int i = 0; i < arr.length; i++)
-            System.out.print(arr[i] + " ");
+        for (int j : arr) System.out.print(j + " ");
     }
 
     public static void main(String[] args) {
-        int arr[] = {64, 25, 12, 22, 11};
+        int[] arr = {64, 25, 12, 22, 11};
         int n = arr.length;
         SelectionSort ss = new SelectionSort();
         ss.sort(arr, n);

@@ -1,4 +1,4 @@
-package com.codewithjaveed;
+package com.codewithjaveed.algorithm;
 
 public class ReversePattern {
     public static void main(String[] args) {
